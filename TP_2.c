@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <stdlib.h>
+
 int a = 10;
 long b = 150;
 short c = 8;
