@@ -1,4 +1,3 @@
-#include <cstdio>
 #include <stdio.h>
 #define TAILLE_TAB 5
  
