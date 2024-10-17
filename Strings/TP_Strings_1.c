@@ -15,11 +15,11 @@ int main() {
 
     printf("Entrez une chaine de caratères: ");
     /* Scanf considère un espace comme la fin d'un string! /!\ */
-    scanf("%s", string);
+    fgets(string, 128, stdin);
     /* Tant que le string n'est pas fini, on compte */
     while(*(string + length) != '\0') 
         length++;
-    /* Affichage de la taille */
-    printf("Taille de la chaine: %d\n", length);
+    /* Affichage de la taille, retour à la ligne compté donc -1 */
+    printf("Taille de la chaine: %d\n", length - 1);
     return 0;
 }
