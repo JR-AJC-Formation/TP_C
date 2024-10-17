@@ -20,10 +20,8 @@ int main() {
     printf("Tableau: ");
     (*affichage)(tableau, TAILLE_TAB);
     printf("\nDoublage des valeurs de Tableau\n");
-    int *temp = &tableau[0];
     for (int i = 0; i < TAILLE_TAB; i++){
-        *temp *= 2;
-        temp += 1;
+        *(tableau + i) *= 2;
     }
     printf("Tableau: ");
     (*affichage)(tableau, TAILLE_TAB);

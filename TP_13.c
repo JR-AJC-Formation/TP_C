@@ -23,12 +23,8 @@ int main() {
     printf(" Tableau 2: ");
     (*affichage)(tableau2, TAILLE_TAB);
     printf("\nCopie des valeurs de Tableau1 dans Tableau2\n");
-    int *temp1 = &tableau1[0];
-    int *temp2 = &tableau2[0];
     for (int i = 0; i < TAILLE_TAB; i++){
-        *temp2 = *temp1;
-        temp1 += 1;
-        temp2 += 1;
+        *(tableau2 + i) = *(tableau1 + i);
     }
     printf("Tableau 1: ");
     (*affichage)(tableau1, TAILLE_TAB);
